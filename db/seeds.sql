@@ -1,10 +1,10 @@
-USE burgers;
+USE burgers_db;
 
-INSERT INTO burger_name (name)
+INSERT INTO burgers (burger_name)
 VALUES ("Mushroom Swiss Burger");
 
-INSERT INTO burger_name (name)
+INSERT INTO burgers (burger_name)
 VALUES ("Mac and Cheese Burger");
 
-INSERT INTO burger_name (name)
+INSERT INTO burgers (burger_name)
 VALUES ("PBJ Burger");
