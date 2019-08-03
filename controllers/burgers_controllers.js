@@ -5,7 +5,7 @@ var router = express.Router();
 // import model(burger.js) to use database functions
 var burger = require("../models/burger.js");
 
-// create all routes and set up logic within where required
+// GET all routes and set up logic within where required
 router.get("/", function (req, res){
     burger.selectAll(function(data){
         var hbsObject = {
@@ -16,6 +16,7 @@ router.get("/", function (req, res){
     });
 });
 
+// POST route to create new table row
 router.post("/burgers", function(req, res){
     burger.insertOne([
         "burger_name"
@@ -27,15 +28,14 @@ router.post("/burgers", function(req, res){
     });
 });
 
+// PUT route to update row
 router.put("/burgers/:id", function(req, res){
     var condition = "id = " + req.params.id;
 
-    console.log("condition", condition);
-
     burger.updateOne({
         devoured: true
-    }, condition, function(result){
-        if(result.changedRows == 0){
+    }, condition, function(data){
+        if(res.changedRows == 0){
             // if no rows change, the ID must not exist = 404
             return res.status(404).end();
         } else {
