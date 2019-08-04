@@ -1,0 +1,63 @@
+  body {
+ 	width: 100%;
+	margin: 0 auto; 
+	display: flex;
+	flex-direction: column;
+    background-color: white;
+    font-family: "Fontdiner Swanky", cursive;
+ }
+img{
+    display: block;
+    margin: auto;
+}
+ h1 {
+ 	text-align: center;
+ 	font-size: 65px;
+ 	margin: 50px;
+ }
+
+ .burgerToEat {
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+ 	border-radius: 25px;
+ 	width: 100%;
+ 	margin: 10px;
+ 	padding: 10px;
+ 	background-color: #FFC04C;
+     border: none;
+ }
+
+ .burgerToEat:hover {
+ 	background-color: rgb(252, 210, 134);
+ }
+
+ h3 {
+  	text-align: center;
+ 	font-size: 40px;
+ 	margin: 50px;
+ }
+
+ .formContainer {
+     background-color: orange;
+     align-content: center;
+     text-align: center;
+ }
+
+ .addBurgerButton {
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+    align-content: center;
+ 	border-radius: 25px;
+ 	width: 100%;
+ 	margin: 0;
+ 	padding: 10px;
+ 	background-color: #FFC04C;
+ 	border: none;
+ }
+
+.addBurgerButton:active {
+	background-color: rgb(252, 210, 134);
+}
+

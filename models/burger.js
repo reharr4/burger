@@ -19,7 +19,7 @@ var burger = {
         orm.updateOne("burgers", objColVals, condition, function(res){
             cb(res);
         });
-    }
+    },
 };
 
 // export database functions for controller (burgerController.js)
